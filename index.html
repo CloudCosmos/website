@@ -241,7 +241,7 @@
     <div class="hero-body">
       <div class="container">
         <div class="columns">
-          <div class="column is-6 is-offset-0 landing-caption">
+          <div class="column is-5 is-offset-0 landing-caption">
             <h1 class="title is-1 is-bold is-spaced">Contact Us</h1>
             <span class="icon is-large is-left">
               <i class="fas fa-envelope"></i>
@@ -265,20 +265,21 @@
               </li>
             </ul>
           </div>
-          <div class="column is-6 is-offset-0" id="google-maps">
-            <div class="tile is-ancestor">
+          <div class="column is-5 is-offset-0 is-hidden-touch" id="google-maps">
+            <div style="height:450px; border:2px solid #eee; display:inline-block; overflow:hidden;">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DWffxqW8i8uTERh-33Pcc3uFeRNkFToj"
-              style="pointer-events:none;"
+              style="pointer-events:none; position:relative; top:-50px; border:0;"
               width="640"
-              height="480"
+              height="500"
               frameborder="0">
             </iframe>
             </div>
           </div>
         </div>
         <div class="columns">
-          <div class="column is-5 is-offset-0 landing-caption">
+          <div class="column is-offset-0">
             <h2 class="title is-3 is-bold is-spaced">Interested in working together?</h2>
+            <div class="is-flex-touch ">
             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
             <script>
               hbspt.forms.create({
@@ -286,6 +287,7 @@
                 formId: "1ced9889-145f-4011-bec6-e5bec4b51903"
               });
             </script>
+            </div>
           </div>
         </div>
       </div>
