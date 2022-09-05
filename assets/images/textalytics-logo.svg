@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155" height="120" version="1.1">
+  <style>
+    .textalytics { font: bold 150px sans-serif; fill: #28b76b}
+  </style>
+
+  <text x="0" y="118" class="textalytics">tλ</text>
+</svg>
