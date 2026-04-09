@@ -1,0 +1,21 @@
+# CloudCosmos
+
+CloudCosmos is the services company working across AI and information retrieval, legacy modernization, digital transformation, platform engineering, and startup execution.
+
+## Site
+- Homepage: https://cloudcosmos.tech/
+- Contact: mailto:info@cloudcosmos.tech
+
+## Services
+- AI and information retrieval
+- Legacy modernization
+- Digital transformation
+- Platform engineering
+- Startup build partnerships
+
+## Capabilities
+- LLM applications and retrieval-augmented systems
+- Search relevance and ranking
+- Computer vision and document understanding
+- Platform engineering and cloud delivery
+- Architecture modernization and software transformation

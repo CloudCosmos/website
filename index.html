@@ -1,521 +1,745 @@
 <!DOCTYPE html>
-<html lang=" en-US" class="has-navbar-fixed-top">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-  <title>Exceptional Products Require World Class Teams - CloudCosmos</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CloudCosmos</title>
+  <meta
+    name="description"
+    content="CloudCosmos partners with companies on AI and information retrieval, legacy modernization, digital transformation, platform engineering, and startup execution."
+  />
+  <meta
+    name="keywords"
+    content="CloudCosmos, AI services, information retrieval, platform engineering, legacy modernization, digital transformation, startup engineering"
+  />
+  <meta name="author" content="CloudCosmos" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CloudCosmos" />
+  <meta property="og:title" content="CloudCosmos" />
+  <meta
+    property="og:description"
+    content="Services across AI, retrieval, modernization, platform engineering, and product delivery."
+  />
+  <meta property="og:url" content="https://cloudcosmos.tech/" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CloudCosmos" />
+  <meta
+    name="twitter:description"
+    content="Engineering services for AI systems, retrieval, modernization, and startup delivery."
+  />
+  <link rel="canonical" href="https://cloudcosmos.tech/" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CloudCosmos",
+      "url": "https://cloudcosmos.tech/",
+      "description": "CloudCosmos partners with companies on AI and information retrieval, legacy modernization, digital transformation, platform engineering, and startup execution.",
+      "sameAs": [
+        "https://github.com/cloudcosmos",
+        "https://linkedin.com/company/cloudcosmos"
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --panel: #f5f7fb;
+      --panel-strong: #eef2f8;
+      --line: #dfe5ef;
+      --text: #101828;
+      --muted: #5f6b7a;
+      --subtle: #7a8699;
+      --accent: #1f3a5f;
+      --max-width: 1180px;
+      --radius: 24px;
+    }
 
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    * {
+      box-sizing: border-box;
+    }
 
-  <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .page {
+      width: min(calc(100% - 40px), var(--max-width));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      min-width: 0;
+    }
+
+    .brand img {
+      height: 30px;
+      width: auto;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 52px 0 40px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .kicker {
+      margin: 0 0 18px;
+      color: var(--subtle);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 12ch;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: clamp(3.2rem, 8vw, 6.4rem);
+      line-height: 0.93;
+      letter-spacing: -0.07em;
+      font-weight: 700;
+    }
+
+    .lead {
+      margin: 0;
+      max-width: 64ch;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.78;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .hero-band {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .hero-band-item {
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .hero-band-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-band-item span {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.94rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: background-color 140ms ease, color 140ms ease, border-color 140ms ease;
+    }
+
+    .button-primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+
+    .button-secondary {
+      background: var(--surface);
+      color: var(--text);
+    }
+
+    .section {
+      padding: 52px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-alt {
+      background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
+    }
+
+    .section-header {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    .section-header h2 {
+      margin: 0;
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      font-weight: 650;
+    }
+
+    .section-header p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .cards-2 {
+      display: grid;
+      gap: 16px;
+    }
+
+    .cards-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+      gap: 16px;
+    }
+
+    .services-nav {
+      padding: 24px;
+      background: var(--panel-strong);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .services-nav h3 {
+      margin: 0 0 12px;
+      font-size: 1.05rem;
+      letter-spacing: -0.03em;
+    }
+
+    .services-nav p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .services-nav-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .services-nav-item {
+      padding: 12px 14px;
+      border: 1px solid #d6dde8;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    .contact-simple {
+      max-width: 720px;
+    }
+
+    .contact-email {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    .card {
+      padding: 24px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.04rem;
+      letter-spacing: -0.03em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      white-space: nowrap;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .logo-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 120px;
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .logo-card img {
+      max-height: 42px;
+      width: auto;
+      object-fit: contain;
+      filter: grayscale(0.05);
+    }
+
+    .references .logo-card {
+      background: linear-gradient(180deg, #ffffff 0%, var(--panel) 100%);
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .person {
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .person-image {
+      width: 88px;
+      height: 88px;
+      margin-bottom: 18px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #f4f4f4;
+    }
+
+    .person-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .person h3 {
+      margin: 0 0 6px;
+      font-size: 1.08rem;
+      letter-spacing: -0.03em;
+    }
+
+    .person-role {
+      margin: 0 0 12px;
+      color: var(--subtle);
+      font-size: 0.92rem;
+    }
+
+    .person p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 16px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 22px 0 40px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    @media (max-width: 960px) {
+      .hero-band,
+      .section-header,
+      .cards-2,
+      .services-grid,
+      .logo-grid,
+      .team,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(calc(100% - 24px), var(--max-width));
+      }
+
+      .topbar,
+      .footer {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .hero {
+        padding: 56px 0 52px;
+      }
+
+      h1 {
+        max-width: 11ch;
+        font-size: clamp(2.8rem, 14vw, 4.4rem);
+      }
+
+      .hero-band {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
-<nav class="navbar is-fixed-top is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
-  <div class="container">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img src="/assets/images/cloudcosmos_logo.png" height="25" alt="cloudcosmos" />
-      </a>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navbarMenu" class="navbar-menu">
-      <div class="navbar-end">
-        
-        <a class="navbar-item" href="/">Home</a>
-        
-        <a class="navbar-item" href="/#areas-of-expertise">Areas of Expertise</a>
-        
-        <a class="navbar-item" href="/#about-us">About</a>
-        
-        <a class="navbar-item" href="/#clients">Clients</a>
-        
-        <a class="navbar-item" href="/#oss-projects">Open-Source Projects</a>
-                        
-        <a class="navbar-item" href="/#contact-us">Contact</a>
-        
-      </div>
-    </div>
-    <script charset="utf-8" type="text/javascript">
-      document.addEventListener('DOMContentLoaded', () => {
-
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
-          // Add a click event on each of them
-          $navbarBurgers.forEach(el => {
-            el.addEventListener('click', () => {
-
-              // Get the target from the "data-target" attribute
-              const target = el.dataset.target;
-              const $target = document.getElementById(target);
-
-              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-              el.classList.toggle('is-active');
-              $target.classList.toggle('is-active');
-
-            });
-          });
-        }
-
-      });
-    </script>
-  </div>
-</nav>
-
 <body>
-<section class="hero is-fullheight is-default is-bold" id="home">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-10 is-offset-0 landing-caption">
-                    <h1 class="title is-1 is-bold is-spaced">Exceptional Products Require World Class Teams</h1>
-                    <h2 class="subtitle is-3">We bring outstanding craftspeople to give you a helping hand in solving complex problems. </h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="hero is-fullheight is-default is-bold" id="areas-of-expertise">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-10 is-offset-0 landing-caption">
-                    <h1 class="title is-1 is-bold is-spaced">Areas of Expertise</h1>
-                    <h3 class="subtitle is-3 is-spaced">CloudCosmos is a team of high-calibre professionals with
-                        demonstrated track record of delivering high quality software.</h3>
-                    <h5 class="subtitle is-5 is-spaced">We help our clients unlock growth by focusing in a few key
-                        solution areas.</h5>
-                </div>
-            </div>
-            <div class="tile is-ancestor">
-                <div class="tile is-vertical">
-                    <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                            <article class="tile is-child notification">
-                                <h3 class="title is-4 is-bold is-spaced">
-                                    Search/IR, Data Science & AI/ML
-                                </h3>
-                                <p class="subtitle is-6">
-                                    Specialists addressing specific problem areas related to information-retrieval,
-                                    search & search
-                                    relevance, computer-vision, summarization, etc!
-                                </p>
-                                <p class="subtitle is-6">
-                                    Our team has expertise working with technologies like Solr, ElasticSearch, Lucene,
-                                    DCG/nDGC in
-                                    improving search relevance. We have built summarizers
-                                    and sentiment analysis tools for our clients. Our AI/ML expertise ranges from
-                                    computer vision,
-                                    building models using techniques like TensorFlow,
-                                    to deploying AI/ML applications on various platforms.
-                                </p>
-                            </article>
-                        </div>
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification">
-                                <h3 class="title is-4 is-bold is-spaced">
-                                    DevOps
-                                </h3>
-                                <p class="subtitle is-6">
-                                    Experts in deploying and managing applications on the cloud!
-                                </p>
-                                <p class="subtitle is-6">
-                                    Cloud deployments can get complex really fast. Whether it is to isolate environments
-                                    for your
-                                    different teams to collaborate, or scaling your application
-                                    automatically based on demand, our team has expertise with tools like Docker and
-                                    Kubernetes to
-                                    address your challenges.
-                                </p>
-                            </article>
-                        </div>
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification">
-                                <h3 class="title is-4 is-bold is-spaced">
-                                    Bespoke Software Development
-                                </h3>
-                                <p class="subtitle is-6">
-                                    Software craftspeople to augment your software and product engineering teams!
-                                </p>
-                                <p class="subtitle is-6">
-                                    Our team has a varied background in SaaS, API, Full Stack Web and Mobile Development
-                                    across platforms. We have
-                                    expertise in all cloud platforms - AWS, GCP & Azure.
-                                </p>
-                                <p class="subtitle is-6">
-                                    We use time-tested agile practices to ensure your software delivery is smooth.
-                                    Product management,
-                                    program management, tech leadership, technology architecture, and polyglot software
-                                    development are some of the areas we excel in.
-                                </p>
-                                <p class="subtitle is-6">
-                                    We respect the rich legacies that our clients have built and enjoy working in large
-                                    legacy code-bases, shaping them slowly and gradually
-                                    for the future by bringing in best practices such as metric driven detection of
-                                    bottlenecks in system flows, and using philosophies such as "12 Factor Development"
-                                    and "DORA" to move functionality to new services, by slowly "strangling" the old
-                                    ones, in measured steps.
-                                </p>
-                            </article>
-                        </div>
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification">
-                                <h3 class="title is-4 is-bold is-spaced">
-                                    Day Zero to Day One Product Development
-                                </h3>
-                                <p class="subtitle is-6">
-                                    A startup looking to take your product to market at the earliest?
-                                </p>
-                                <p class="subtitle is-6">
-                                    As a startup and with a team having long tenures in startup ecosystems, we are the
-                                    right partners.
-                                    We not only help with your software development, but also help you find ways to
-                                    quickly run
-                                    product-market fit experiments, so you are set for a rocketship growth.
-                                </p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="hero is-fullheight is-default is-bold" id="about-us">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-10 is-offset-0 landing-caption">
-                    <h1 class="title is-1 is-bold is-spaced">About Us</h1>
-                    <div>
-                        <p>
-                            CloudCosmos was founded in 2018 in Raleigh, North Carolina, USA.
-                        </p>
-                        <br/>
-                        <p>
-                            Since its inception CloudCosmos has partnered with clients in implementing successful
-                            projects in
-                            various <a href="/#areas-of-expertise">areas of expertise!</a>
-                        </p>
-                        <br/>
-                        <p>
-                            CloudCosmos has teams in the USA, Brazil and India, enabling us to offer a wide range of
-                            on-shore, near-shore and off-shore services.
-                        </p>
-                    </div>
-                    <br/>
-                    <h2 class="subtitle is-3 is-bold" id="team">Leadership Team</h2>
-                    <ul class="link-list">
-                        <li>
-                            <div id="manoj">
-                  <span class="icon">
-                    <ion-icon name="logo-linkedin" size="medium"></ion-icon>
-                  </span>
-                                <a href="https://www.linkedin.com/in/manojbharadwaj">Manoj Bharadwaj: </a>CEO,
-                                Technology Advisor
-                            </div>
-                        </li>
-                        <li>
-                            <div id="adam">
-                  <span class="icon">
-                    <ion-icon name="logo-linkedin" size="medium"></ion-icon>
-                  </span>
-                                <a href="https://www.linkedin.com/in/youngac-it/">Adam Young: </a>CTO, Technology
-                                Advisor
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="hero is-fullheight is-default is-bold" id="clients">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-10 is-offset-0 landing-caption">
-                    <h1 class="title is-1 is-bold is-spaced">Clients</h1>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column is-6 is-offset-0">
-                    <h2 class="subtitle is-3 is-bold">Current Client Engagements</h2>
+  <script>
+    const capabilities = [
+      {
+        title: "AI and Information Retrieval",
+        description: "Applied AI systems spanning LLM applications, retrieval-augmented workflows, search relevance, vector-backed knowledge access, evaluations, and domain-specific automation."
+      },
+      {
+        title: "Modernization and Transformation",
+        description: "Legacy modernization, architecture evolution, platform upgrades, and measured transformation work that improves delivery without destabilizing the business."
+      },
+      {
+        title: "Platform and Product Engineering",
+        description: "Platform engineering, cloud systems, full-stack product delivery, and startup execution from early validation through production scale."
+      }
+    ];
 
-                    <ul class="link-list">
-                        <li class="m-2">
-                            <a href="https://www.insightsoftware.com" target="_blank">
-                                <img alt="InsightSoftware" height="25%" width="25%"
-                                     src="/assets/images/insightsoftware-logo-color_new.svg">
-                            </a>
-                        </li>
-                        <li class="m-2">
-                            <a href="https://www.fastiron.com" target="_blank">
-                                <img alt="FastIron" height="20%" width="20%"
-                                     src="https://fastiron.com/wp-content/uploads/FastIron-Logo-Color.png">
-                            </a>
-                        </li>
-                        <li class="m-2">
-                            <a href="https://credbull.io/" target="_blank">
-                                <img alt="CredBull" height="20%" width="20%"
-                                     src="https://github.com/credbull/credbull-defi/raw/main/credbull-logo.jpg">
-                            </a>
-                        </li>
-                        <li class="m-2">
-                            <a href="https://www.elevate.law" target="_blank">
-                                <img alt="Elevate Law" height="25%" width="25%"
-                                     src="https://elevate.law/wp-content/uploads/2021/03/elevate-logo-1.svg">
-                            </a>
-                        </li>
-                        <li class="m-2">
-                            <a href="https://www.ascent-online.com" target="_blank">
-                                <img alt="Ascent HR" height="25%" width="25%"
-                                     src="/assets/images/ascent-brand-logo.png">
-                            </a>
-                        </li>
-                        <li class="m-2">
-                            <a href="https://www.trypeach.io" target="_blank">
-                                <img alt="Peach" height="25%" width="25%"
-                                     src="https://trypeach.io/images/logo.svg">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column is-6 is-offset-0">
-                    <h2 class="subtitle is-3 is-bold">Previous Client Engagements</h2>
-                    <ul class="link-list">
-                        <li class="m-2">
-                            <a href="https://www.travelopia.com" target="_blank">
-                                <img alt="Travelopia" height="20%" width="20%"
-                                     src="/assets/images/travelopia-logo.svg">
-                            </a>
-                        </li>
-                        <li class="m-2">
-                            <a href="https://www.mitratech.com" target="_blank">
-                                <img alt="Mitratech" height="20%" width="20%"
-                                     src="/assets/images/mitratech-logo-dark.png">
-                            </a>
-                        </li>
-                        <li class="m-2">
-                            <a href="https://www.gumstack.com" target="_blank">
-                                <img alt="Gumstack" height="20%" width="20%"
-                                     src="/assets/images/gumstack-logo-dark.svg">
-                            </a>
-                        </li>
-                        <li class="m-2">
-                            <a href="https://www.ntst.com" target="_blank">
-                                <img alt="Netsmart (GPM)" height="25%" width="25%"
-                                     src="/assets/images/logo-netsmart-color.svg">
-                            </a>
-                        </li>
-                        <li class="m-2">
-                            <a href="https://www.humanpredictions.io" target="_blank">
-                                <img alt="HumanPredictions" height="25%" width="25%"
-                                     src="/assets/images/humanpredictions-logo.svg">
-                            </a>
-                        </li>
-                        <li class="m-2">
-                            <a href="https://www.greenlighthealth.com" target="_blank">
-                                <img alt="GreenLight Health" height="25%" width="25%"
-                                     src="/assets/images/greenlight-logo-new-1.png">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="hero is-fullheight is-default is-bold" id="oss-projects">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-10 is-offset-0 landing-caption">
-                    <h1 class="title is-1 is-bold is-spaced">Open-Source Projects</h1>
-                    <ul class="link-list">
-                        <li class="m-2">
-                            <a href="https://github.com/newsfetch/newsfetch" target="_blank">
-                                <img alt="NewsFetch" height="20%" width="20%"
-                                     src="/assets/images/newsfetch_logo.png">
-                            </a>
-                        </li>
-                        <li class="m-2">
-                            <a href="https://github.com/Textalytics">
-                                <img alt="Textalytics" height="20%" width="20%"
-                                     src="/assets/images/textalytics_text_logo.png">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    const serviceAreas = [
+      {
+        title: "AI, Retrieval, and Search",
+        description: "We work across LLM applications, relevant search, retrieval, ranking, document understanding, computer vision, and applied AI systems that need to be production-ready.",
+        tags: ["LLMs", "RAG", "Search Relevance", "Computer Vision"]
+      },
+      {
+        title: "Legacy Modernization",
+        description: "We help teams reshape aging systems into cleaner, more maintainable architectures while preserving what already works and reducing migration risk.",
+        tags: ["Re-architecture", "Migration", "Platform Upgrades", "Reliability"]
+      },
+      {
+        title: "Digital Transformation",
+        description: "From internal tooling to customer-facing platforms, we help companies translate operational complexity into better systems, workflows, and delivery velocity.",
+        tags: ["Workflow Design", "Data Systems", "Automation", "Execution"]
+      },
+      {
+        title: "Platform Engineering",
+        description: "We build and support the platform layer behind modern software teams, from cloud infrastructure and APIs to CI/CD, observability, and dependable release pipelines.",
+        tags: ["Cloud", "DevOps", "APIs", "Delivery Systems"]
+      },
+      {
+        title: "Startup Build Partnerships",
+        description: "We help startups move from idea to shipping product with technical leadership, engineering capacity, and fast feedback loops around product-market fit.",
+        tags: ["0 to 1", "MVPs", "Product Engineering", "Tech Leadership"]
+      },
+      {
+        title: "Teams for Hard Problems",
+        description: "CloudCosmos assembles senior engineering and product talent for difficult work that sits at the intersection of architecture, data, AI, and execution.",
+        tags: ["Senior Talent", "Complex Systems", "Advisory", "Delivery"]
+      }
+    ];
 
-<section class="hero is-fullheight is-default is-bold" id="contact-us">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-5 is-offset-0 landing-caption">
-                    <h1 class="title is-1 is-bold is-spaced">Contact Us</h1>
-                    <span class="icon is-large is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-                    <a href="mailto:info@cloudcosmos.tech">info@cloudcosmos.tech</a>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <h2 class="subtitle is-3 is-bold">Office Locations</h2>
-                    <ul class="link-list">
-                        <li>
-                <span class="icon is-large is-left">
-                  <i class="fas fa-map-marker"></i>
-                </span>Raleigh, North Carolina, USA
-                        </li>
-                        <li>
-                <span class="icon is-large is-left">
-                  <i class="fas fa-map-marker"></i>
-                </span>São Paulo, Brazil
-                        </li>
-                        <li>
-                <span class="icon is-large is-left">
-                  <i class="fas fa-map-marker"></i>
-                </span>Bengaluru, Karnataka, India
-                        </li>
-                    </ul>
-                </div>
-                <div class="column is-5 is-offset-0 is-hidden-touch" id="google-maps">
-                    <div style="height:450px; border:2px solid #eee; display:inline-block; overflow:hidden;">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DWffxqW8i8uTERh-33Pcc3uFeRNkFToj"
-                                style="pointer-events:none; position:relative; top:-50px; border:0;"
-                                width="640"
-                                height="500"
-                                frameborder="0">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column is-offset-0">
-                    <h2 class="title is-3 is-bold is-spaced">Interested in working together?</h2>
-                    <div class="is-flex-touch ">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js?pre=1"></script>
-                        <script>
-                            hbspt.forms.create({
-                                region: "na1",
-                                portalId: "21526404",
-                                formId: "7aea13cd-5b1c-4be9-91cc-f59e3f4429db"
-                            });
-                        </script>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<footer class="footer footer-dark">
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        <div class="footer-logo">
-          <img src="/assets/images/cloudcosmos_logo.png">
-        </div>
-      </div>
-      <div class="column">
-        <div class="footer-column">
-          <div class="footer-header">
-            <h3><a href="#areas-of-expertise">Areas of Expertise</a></h3>
+    const clientLogos = [
+      { name: "InsightSoftware", src: "/assets/images/insightsoftware-logo-color_new.svg", url: "https://www.insightsoftware.com" },
+      { name: "Travelopia", src: "/assets/images/travelopia-logo.svg", url: "https://www.travelopia.com" },
+      { name: "FastIron", src: "https://fastiron.com/wp-content/uploads/FastIron-Logo-Color.png", url: "https://fastiron.com/" }
+    ];
+
+    const team = [
+      {
+        name: "Manoj Bharadwaj",
+        role: "Co-Founder",
+        blurb: "Product and technology leader working across AI, retrieval, software architecture, and company building.",
+        image: "/assets/images/manoj-profile.png",
+        linkedin: "https://www.linkedin.com/in/manojbharadwaj/"
+      },
+      {
+        name: "Aarti Bharadwaj",
+        role: "Co-Founder",
+        blurb: "Co-founder helping shape company direction, relationships, and the broader growth of the business.",
+        image: "/assets/images/aarti-profile.png",
+        linkedin: "https://www.linkedin.com/in/aartibharadwaj/"
+      },
+      {
+        name: "Adam Young",
+        role: "Technology Advisor",
+        blurb: "Technical advisor focused on engineering execution, systems design, and product delivery for demanding software programs.",
+        image: "/assets/images/adam-profile.png",
+        linkedin: "https://www.linkedin.com/in/youngac-it/"
+      }
+    ];
+  </script>
+
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="CloudCosmos home">
+        <img src="/assets/images/cloudcosmos_logo.png" alt="CloudCosmos" />
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#clients">References</a>
+        <a href="#team">Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="kicker">AI and engineering services</p>
+          <h1>Engineering depth for companies building with AI.</h1>
+          <p class="lead" style="margin-top: 20px;">
+            CloudCosmos partners with companies working through AI adoption, information retrieval,
+            modernization, platform engineering, and product delivery.
+          </p>
+          <p class="lead" style="margin-top: 16px;">
+            We help teams design, build, modernize, and ship systems that need strong engineering judgment,
+            practical execution, and the ability to work across both new platforms and legacy complexity.
+          </p>
+          <p class="lead" style="margin-top: 16px;">
+            CloudCosmos is the services company. Manoj Bharadwaj and Aarti Bharadwaj also co-founded
+            <a href="https://gowriai.ventures/" rel="noopener" target="_blank">GowriAI.Ventures</a>, which serves as the associated product and venture platform.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#services">View services</a>
+            <a class="button button-secondary" href="mailto:info@cloudcosmos.tech">Start a conversation</a>
           </div>
-          <ul class="link-list">
-            <li>AI/ML</li>
-            <li>Search & Search Relevance</li>
-            <li>Bespoke Software Development</li>
-            <li>Legacy Software Re-architecture</li>
-            <li>DevOps</li>
-            <li>Cloud - AWS, GCP, Azure</li>
-          </ul>
-        </div>
-      </div>
-      <div class="column">
-        <div class="footer-column">
-          <div class="footer-header">
-            <h3><a href="#clients">Clients</a></h3>
-          </div>
-          <ul class="link-list">
-            <li>InsightSoftware</li>
-            <li>CredBull</li>
-            <li>Ascent HR</li>
-            <li>Elevate Law</li>
-            <li>FastIron</li>
-            <li>Travelopia</li>
-            <li>Human Predictions</li>
-            <li>Gumstack</li>
-            <li>NetSmart</li>
-            <li>Peach</li>
-            <li>Mitratech</li>
-            <li>Greenlight Health</li>
-
-          </ul>
-        </div>
-      </div>
-      <div class="column">
-        <div class="footer-column">
-          <div class="footer-header">
-            <h3><a href="/#oss-projects">OSS Projects</a></h3>
-          </div>
-          <ul class="link-list">
-            <li>NewsFetch</li>
-            <li>Textalytics</li>
-          </ul>
-        </div>
-      </div>
-      <div class="column">
-        <div class="footer-column">
-          <div class="footer-header">
-            <h3>Follow Us</h3>
-            <nav class="level is-mobile">
-              <div class="level-left">
-                <a class="level-item" href="https://github.com/cloudcosmos" target="_blank">
-                  <span class="icon">
-                    <ion-icon name="logo-github" size="large"></ion-icon>
-                  </span>
-                </a>
-                <a class="level-item" href="https://linkedin.com/company/cloudcosmos" target="_blank">
-                  <span class="icon">
-                    <ion-icon name="logo-linkedin" size="large"></ion-icon>
-                  </span>
-                </a>
-              </div>
-            </nav>
-
-            <a href="https://bulma.io" target="_blank">
-              <img
-                src="https://bulma.io/assets/images/made-with-bulma.png"
-                alt="Made with Bulma"
-                width="128"
-                height="24">
-            </a>
+          <div class="hero-band">
+            <div class="hero-band-item">
+              <strong>AI Systems</strong>
+              <span>LLMs, retrieval, search relevance, and applied intelligence.</span>
+            </div>
+            <div class="hero-band-item">
+              <strong>Modernization</strong>
+              <span>Legacy architecture, digital transformation, and platform change.</span>
+            </div>
+            <div class="hero-band-item">
+              <strong>Delivery</strong>
+              <span>Startup builds, technical leadership, and engineering execution.</span>
+            </div>
           </div>
         </div>
+      </section>
+
+      <section class="section section-alt" id="services" aria-labelledby="services-title">
+        <div class="section-header">
+          <h2 id="services-title">Service Areas</h2>
+          <p>
+            The work spans AI and retrieval, transformation of legacy software, platform foundations,
+            and startup-oriented delivery where speed and judgment both matter.
+          </p>
+        </div>
+        <div class="services-grid">
+          <aside class="services-nav">
+            <h3>How CloudCosmos works with clients</h3>
+            <p>
+              We work best where teams need senior engineering judgment, hands-on delivery,
+              and the ability to move fluidly between architecture, AI systems, and execution.
+            </p>
+            <div class="services-nav-list">
+              <div class="services-nav-item">Embedded support for internal product and platform teams</div>
+              <div class="services-nav-item">Focused delivery for modernization and transformation work</div>
+              <div class="services-nav-item">Startup build partnerships from early product through scale-up</div>
+            </div>
+          </aside>
+          <div class="cards-2" id="service-grid"></div>
+        </div>
+      </section>
+
+      <section class="section references" id="clients" aria-labelledby="clients-title">
+        <div class="section-header">
+          <h2 id="clients-title">Selected References</h2>
+          <p>
+            A subset of organizations associated with CloudCosmos engagements and past delivery.
+          </p>
+        </div>
+        <div class="logo-grid" id="client-grid"></div>
+      </section>
+
+      <section class="section" id="team" aria-labelledby="team-title">
+        <div class="section-header">
+          <h2 id="team-title">Leadership</h2>
+          <p>
+            Leadership across product, engineering, and technical advisory work, with profiles linked for reference.
+          </p>
+        </div>
+        <div class="team" id="team-grid"></div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="section-header">
+          <h2 id="contact-title">Contact</h2>
+          <p>
+            Reach out if you are looking for help with AI systems, modernization,
+            platform engineering, or a startup build effort that needs experienced hands.
+          </p>
+        </div>
+        <div class="contact-simple">
+          <div class="contact-email">
+            <a href="mailto:info@cloudcosmos.tech">info@cloudcosmos.tech</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> CloudCosmos</span>
+      <div class="footer-links">
+        <a href="https://github.com/cloudcosmos" rel="noopener" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/company/cloudcosmos" rel="noopener" target="_blank">LinkedIn</a>
+        <a href="mailto:info@cloudcosmos.tech">info@cloudcosmos.tech</a>
       </div>
-    </div>
+    </footer>
   </div>
-</footer>
-<div id="backtotop"><a href="#"></a></div>
 
-<script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+  <script>
+    const serviceGrid = document.getElementById("service-grid");
+    const clientGrid = document.getElementById("client-grid");
+    const teamGrid = document.getElementById("team-grid");
+
+    serviceAreas.forEach((service) => {
+      const item = document.createElement("article");
+      item.className = "card";
+      const pills = service.tags.map((tag) => `<span class="pill">${tag}</span>`).join("");
+      item.innerHTML = `
+        <h3>${service.title}</h3>
+        <p>${service.description}</p>
+        <div class="pill-row">${pills}</div>
+      `;
+      serviceGrid.appendChild(item);
+    });
+
+    clientLogos.forEach((client) => {
+      const item = document.createElement("a");
+      item.className = "logo-card";
+      item.href = client.url;
+      item.target = "_blank";
+      item.rel = "noopener";
+      item.innerHTML = `<img src="${client.src}" alt="${client.name}" />`;
+      clientGrid.appendChild(item);
+    });
+
+    team.forEach((person) => {
+      const item = document.createElement("article");
+      item.className = "person";
+      item.innerHTML = `
+        <div class="person-image">
+          <img src="${person.image}" alt="${person.name}" />
+        </div>
+        <h3>${person.name}</h3>
+        <p class="person-role">${person.role}</p>
+        <p>${person.blurb}</p>
+        <a href="${person.linkedin}" rel="noopener" target="_blank">View LinkedIn</a>
+      `;
+      teamGrid.appendChild(item);
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
