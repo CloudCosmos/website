@@ -3,7 +3,7 @@ Bavalpreet Singh,https://www.linkedin.com/in/bavalpreetsinghh/,AI Architect,bava
 Jaskaran Singh,https://www.linkedin.com/in/jaskaran-singh-586b8b14a/,Sr AI Engineer,jaskaran-profile.png
 Jashneet Kaur,https://www.linkedin.com/in/jashneet-kaur/,AI Engineer,jashneet-profile.png
 Murilo Bauer,https://www.linkedin.com/in/murilobauer/,Sr Software Engineer,murilo-profile.png
-Veller Bauer,https://www.linkedin.com/in/vellerbauer/,Engineering Manager & Technical Lead,veller-profile.png
+Veller Bauer,https://www.linkedin.com/in/vellerbauer/,Engineering Manager,veller-profile.png
 Ankit Gupta,https://www.linkedin.com/in/ankit-gupta1106/,AI Engineer,ankit-profile.png
 Supreeth Shridhar,,Sr Software Engineer,
 Vasanth Kumar,https://www.linkedin.com/in/vasanthkumarn/,Sr Software Engineer,vasanth-profile.png
