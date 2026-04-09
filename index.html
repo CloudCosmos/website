@@ -849,7 +849,7 @@
             .toUpperCase();
 
           const imageMarkup = person.image
-            ? `<div class="person-image"><img src="/assets/images/${person.image}" alt="${person.name}" /></div>`
+            ? `<div class="person-image"><img src="/assets/images/${person.image}" alt="${person.name}" onerror="this.parentElement.classList.add('fallback'); this.parentElement.textContent='${initials}'; this.remove();" /></div>`
             : `<div class="person-image fallback" aria-label="${person.name}">${initials}</div>`;
 
           const linkedInMarkup = person.linkedin
