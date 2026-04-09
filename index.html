@@ -601,6 +601,7 @@
         <a href="#services">Services</a>
         <a href="#clients">References</a>
         <a href="#team">Leadership</a>
+        <a href="#team-members">Team</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -711,6 +712,16 @@
         <div class="team" id="leadership-grid"></div>
       </section>
 
+      <section class="section" id="team-members" aria-labelledby="team-members-title">
+        <div class="section-header">
+          <h2 id="team-members-title">Team</h2>
+          <p>
+            A broader team across AI engineering, software development, delivery, and technical execution.
+          </p>
+        </div>
+        <div class="team" id="members-grid"></div>
+      </section>
+
       <section class="section" id="contact" aria-labelledby="contact-title">
         <div class="section-header">
           <h2 id="contact-title">Contact</h2>
@@ -742,6 +753,7 @@
     const clientGrid = document.getElementById("client-grid");
     const foundersGrid = document.getElementById("founders-grid");
     const leadershipGrid = document.getElementById("leadership-grid");
+    const membersGrid = document.getElementById("members-grid");
 
     serviceAreas.forEach((service) => {
       const item = document.createElement("article");
@@ -794,6 +806,49 @@
       `;
       leadershipGrid.appendChild(item);
     });
+
+    const renderTeamMembers = async () => {
+      try {
+        const response = await fetch("/team-members.txt");
+        if (!response.ok) {
+          return;
+        }
+
+        const csv = await response.text();
+        const rows = csv.trim().split("\n");
+        const headers = rows.shift().split(",");
+        const nameIndex = headers.indexOf("name");
+        const linkedInIndex = headers.indexOf("linked-in");
+        const titleIndex = headers.indexOf("title");
+        const imageIndex = headers.indexOf("image");
+
+        rows.forEach((row) => {
+          const columns = row.split(",");
+          const person = {
+            name: columns[nameIndex],
+            linkedin: columns[linkedInIndex],
+            role: columns[titleIndex],
+            image: `/assets/images/${columns[imageIndex]}`
+          };
+
+          const item = document.createElement("article");
+          item.className = "person";
+          item.innerHTML = `
+            <div class="person-image">
+              <img src="${person.image}" alt="${person.name}" />
+            </div>
+            <h3>${person.name}</h3>
+            <p class="person-role">${person.role}</p>
+            <a href="${person.linkedin}" rel="noopener" target="_blank">View LinkedIn</a>
+          `;
+          membersGrid.appendChild(item);
+        });
+      } catch (error) {
+        console.error("Unable to load team members", error);
+      }
+    };
+
+    renderTeamMembers();
 
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
