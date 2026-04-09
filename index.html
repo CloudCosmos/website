@@ -392,10 +392,18 @@
       border-radius: var(--radius);
     }
 
+    .person-top {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
     .person-image {
       width: 88px;
       height: 88px;
-      margin-bottom: 18px;
+      flex-shrink: 0;
       border-radius: 20px;
       overflow: hidden;
       border: 1px solid var(--line);
@@ -433,6 +441,22 @@
       margin: 0 0 14px;
       color: var(--muted);
       line-height: 1.75;
+    }
+
+    .person-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: #ffffff;
     }
 
     .contact-grid {
@@ -790,13 +814,15 @@
       const item = document.createElement("article");
       item.className = "person";
       item.innerHTML = `
-        <div class="person-image">
-          <img src="${person.image}" alt="${person.name}" />
+        <div class="person-top">
+          <div class="person-image">
+            <img src="${person.image}" alt="${person.name}" />
+          </div>
+          <a class="person-link" href="${person.linkedin}" rel="noopener" target="_blank" aria-label="${person.name} LinkedIn">in</a>
         </div>
         <h3>${person.name}</h3>
         <p class="person-role">${person.role}</p>
         <p>${person.blurb}</p>
-        <a href="${person.linkedin}" rel="noopener" target="_blank">View LinkedIn</a>
       `;
       foundersGrid.appendChild(item);
     });
@@ -805,13 +831,15 @@
       const item = document.createElement("article");
       item.className = "person";
       item.innerHTML = `
-        <div class="person-image">
-          <img src="${person.image}" alt="${person.name}" />
+        <div class="person-top">
+          <div class="person-image">
+            <img src="${person.image}" alt="${person.name}" />
+          </div>
+          <a class="person-link" href="${person.linkedin}" rel="noopener" target="_blank" aria-label="${person.name} LinkedIn">in</a>
         </div>
         <h3>${person.name}</h3>
         <p class="person-role">${person.role}</p>
         <p>${person.blurb}</p>
-        <a href="${person.linkedin}" rel="noopener" target="_blank">View LinkedIn</a>
       `;
       leadershipGrid.appendChild(item);
     });
@@ -853,16 +881,18 @@
             : `<div class="person-image fallback" aria-label="${person.name}">${initials}</div>`;
 
           const linkedInMarkup = person.linkedin
-            ? `<a href="${person.linkedin}" rel="noopener" target="_blank">View LinkedIn</a>`
+            ? `<a class="person-link" href="${person.linkedin}" rel="noopener" target="_blank" aria-label="${person.name} LinkedIn">in</a>`
             : "";
 
           const item = document.createElement("article");
           item.className = "person";
           item.innerHTML = `
-            ${imageMarkup}
+            <div class="person-top">
+              ${imageMarkup}
+              ${linkedInMarkup}
+            </div>
             <h3>${person.name}</h3>
             <p class="person-role">${person.role}</p>
-            ${linkedInMarkup}
           `;
           membersGrid.appendChild(item);
         });
