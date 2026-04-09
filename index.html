@@ -408,6 +408,15 @@
       object-fit: cover;
     }
 
+    .person-image.fallback {
+      display: grid;
+      place-items: center;
+      color: var(--subtle);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
     .person h3 {
       margin: 0 0 6px;
       font-size: 1.08rem;
@@ -825,20 +834,35 @@
         rows.forEach((row) => {
           const columns = row.split(",");
           const person = {
-            name: columns[nameIndex],
-            linkedin: columns[linkedInIndex],
-            role: columns[titleIndex],
-            image: `/assets/images/${columns[imageIndex]}`
+            name: (columns[nameIndex] || "").trim(),
+            linkedin: (columns[linkedInIndex] || "").trim(),
+            role: (columns[titleIndex] || "").trim(),
+            image: (columns[imageIndex] || "").trim()
           };
+
+          const initials = person.name
+            .split(" ")
+            .filter(Boolean)
+            .slice(0, 2)
+            .map((part) => part[0])
+            .join("")
+            .toUpperCase();
+
+          const imageMarkup = person.image
+            ? `<div class="person-image"><img src="/assets/images/${person.image}" alt="${person.name}" /></div>`
+            : `<div class="person-image fallback" aria-label="${person.name}">${initials}</div>`;
+
+          const linkedInMarkup = person.linkedin
+            ? `<a href="${person.linkedin}" rel="noopener" target="_blank">View LinkedIn</a>`
+            : "";
 
           const item = document.createElement("article");
           item.className = "person";
           item.innerHTML = `
-            <div class="person-image">
-              <img src="${person.image}" alt="${person.name}" />
-            </div>
+            ${imageMarkup}
             <h3>${person.name}</h3>
             <p class="person-role">${person.role}</p>
+            ${linkedInMarkup}
           `;
           membersGrid.appendChild(item);
         });
