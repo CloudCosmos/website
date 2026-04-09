@@ -5,7 +5,7 @@ Jashneet Kaur,https://www.linkedin.com/in/jashneet-kaur/,AI Engineer,jashneet-pr
 Murilo Bauer,https://www.linkedin.com/in/murilobauer/,Sr Software Engineer,murilo-profile.png
 Veller Bauer,https://www.linkedin.com/in/vellerbauer/,Engineering Manager & Technical Lead,veller-profile.png
 Ankit Gupta,https://www.linkedin.com/in/ankit-gupta1106/,AI Engineer,ankit-profile.png
-Supreeth,,Sr Software Engineer,
+Supreeth Shridhar,,Sr Software Engineer,
 Vasanth Kumar,https://www.linkedin.com/in/vasanthkumarn/,Sr Software Engineer,vasanth-profile.png
 Ranjini Iyer,https://www.linkedin.com/in/ranjini-iyer-4b4540237/,AI Engineer,
 Chitra R,https://www.linkedin.com/in/chitra-r-bbb3ab169/,Software Engineer,chitra-profile.png
