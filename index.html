@@ -385,6 +385,11 @@
       gap: 16px;
     }
 
+    .team.team-compact {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
     .person {
       padding: 24px;
       background: var(--surface);
@@ -459,6 +464,40 @@
       background: #ffffff;
     }
 
+    .team-compact .person {
+      padding: 16px;
+      border-radius: 20px;
+    }
+
+    .team-compact .person-top {
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .team-compact .person-image {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+    }
+
+    .team-compact .person h3 {
+      margin-bottom: 4px;
+      font-size: 0.98rem;
+    }
+
+    .team-compact .person-role {
+      margin: 0;
+      font-size: 0.85rem;
+      line-height: 1.45;
+    }
+
+    .team-compact .person-link {
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      font-size: 0.76rem;
+    }
+
     .contact-grid {
       display: grid;
       grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -495,6 +534,7 @@
       .cards-2,
       .services-grid,
       .logo-grid,
+      .team.team-compact,
       .team,
       .contact-grid {
         grid-template-columns: 1fr;
@@ -747,7 +787,7 @@
             A broader team across AI engineering, software development, delivery, and technical execution.
           </p>
         </div>
-        <div class="team" id="members-grid"></div>
+        <div class="team team-compact" id="members-grid"></div>
       </section>
 
       <section class="section" id="contact" aria-labelledby="contact-title">
