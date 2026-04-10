@@ -12,3 +12,7 @@ Chitra R,https://www.linkedin.com/in/chitra-r-bbb3ab169/,Software Engineer,chitr
 Sharadhi Adiga,https://www.linkedin.com/in/sharadhi-adiga/,Software Engineer,sharadhi-profile.png
 Akash Manikantan,,Software Engineer,
 Adriano Groff,https://www.linkedin.com/in/adrianokg/,Sr Software Engineer,adriano-profile.png
+Ankita,https://www.linkedin.com/in/ankitaintech/,Software Intern,
+Harvir Singh,https://www.linkedin.com/in/harvir-singh-7579a021a/,Software Intern,
+Harshita Khandoli,https://www.linkedin.com/in/harshitakhandoli/,Software Intern,
+Mehak Rana,https://www.linkedin.com/in/mehak-rana-363414369/,Software Intern,
