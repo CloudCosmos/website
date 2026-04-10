@@ -1,10 +1,11 @@
 # CloudCosmos
 
-CloudCosmos is the services company working across AI and information retrieval, legacy modernization, digital transformation, platform engineering, and startup execution.
+CloudCosmos is an independent services company working across AI and information retrieval, legacy modernization, digital transformation, platform engineering, and startup execution.
 
 ## Site
 - Homepage: https://cloudcosmos.tech/
 - Contact: mailto:info@cloudcosmos.tech
+- Operating footprint: USA and India
 
 ## Services
 - AI and information retrieval
@@ -19,3 +20,10 @@ CloudCosmos is the services company working across AI and information retrieval,
 - Computer vision and document understanding
 - Platform engineering and cloud delivery
 - Architecture modernization and software transformation
+- AI-native engineering workflows, agentic delivery patterns, and reusable internal automation
+
+## Leadership
+- Manoj Bharadwaj, CEO, Director (USA)
+- Aarti Bharadwaj, COO, Director (USA)
+- Satish P, Country Head, India
+- Roopa R, Director, Operations (India)
