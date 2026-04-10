@@ -1,11 +1,11 @@
 # CloudCosmos
 
-CloudCosmos is an independent services company working across AI and information retrieval, legacy modernization, digital transformation, platform engineering, and startup execution.
+CloudCosmos is a U.S.-based technology and software company working with mid-market businesses, startups, and product teams nationwide, with particular depth on the East Coast and in the Midwest. The company has also delivered work for clients in India and the Middle East.
 
 ## Site
 - Homepage: https://cloudcosmos.tech/
 - Contact: mailto:info@cloudcosmos.tech
-- Operating footprint: USA and India
+- Operating footprint: Raleigh, North Carolina; Bengaluru, India; Mohali/Chandigarh, India
 
 ## Services
 - AI and information retrieval
@@ -13,6 +13,10 @@ CloudCosmos is an independent services company working across AI and information
 - Digital transformation
 - Platform engineering
 - Startup build partnerships
+
+## Experience
+- Work delivered for a leading global consulting firm
+- Work across tax, legal information, and compliance software domains
 
 ## Capabilities
 - LLM applications and retrieval-augmented systems
