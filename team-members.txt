@@ -15,5 +15,5 @@ Adriano Groff,https://www.linkedin.com/in/adrianokg/,Sr Software Engineer,adrian
 Ankita,https://www.linkedin.com/in/ankitaintech/,Software Engineer,
 Harvir Singh,https://www.linkedin.com/in/harvir-singh-7579a021a/,Software Engineer,
 Harshita Khandoli,https://www.linkedin.com/in/harshitakhandoli/,Software Intern,
-Felipe Freitas,https://www.linkedin.com/in/felipesafreitas/,Sr. Software Engineer,felipe-profile.svg
+Felipe Freitas,https://www.linkedin.com/in/felipesafreitas/,Sr. Software Engineer,felipe-profile.png
 Jessica Diniz,https://www.linkedin.com/in/jessicafdiniz/,Sr. UX Designer,jessica-profile.png
