@@ -16,4 +16,4 @@ Ankita,https://www.linkedin.com/in/ankitaintech/,Software Engineer,
 Harvir Singh,https://www.linkedin.com/in/harvir-singh-7579a021a/,Software Engineer,
 Harshita Khandoli,https://www.linkedin.com/in/harshitakhandoli/,Software Intern,
 Felipe Freitas,https://www.linkedin.com/in/felipesafreitas/,Sr. Software Engineer,felipe-profile.svg
-Jessica Diniz,https://www.linkedin.com/in/jessicafdiniz/,Sr. UX Designer,jessica-profile.svg
+Jessica Diniz,https://www.linkedin.com/in/jessicafdiniz/,Sr. UX Designer,jessica-profile.png
