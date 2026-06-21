@@ -858,6 +858,16 @@
         <div class="team team-compact" id="members-grid"></div>
       </section>
 
+      <section class="section" id="alumni" aria-labelledby="alumni-title">
+        <div class="section-header">
+          <h2 id="alumni-title">Alumni</h2>
+          <p>
+            People who have contributed to CloudCosmos and remain part of the broader extended network.
+          </p>
+        </div>
+        <div class="team team-compact" id="alumni-grid"></div>
+      </section>
+
       <section class="section" id="contact" aria-labelledby="contact-title">
         <div class="section-header">
           <h2 id="contact-title">Contact</h2>
@@ -890,6 +900,7 @@
     const foundersGrid = document.getElementById("founders-grid");
     const leadershipGrid = document.getElementById("leadership-grid");
     const membersGrid = document.getElementById("members-grid");
+    const alumniGrid = document.getElementById("alumni-grid");
 
     serviceAreas.forEach((service) => {
       const item = document.createElement("article");
@@ -947,9 +958,9 @@
       leadershipGrid.appendChild(item);
     });
 
-    const renderTeamMembers = async () => {
+    const renderPeopleCsv = async (path, targetGrid) => {
       try {
-        const response = await fetch("/team-members.txt");
+        const response = await fetch(path);
         if (!response.ok) {
           return;
         }
@@ -997,14 +1008,15 @@
             <h3>${person.name}</h3>
             <p class="person-role">${person.role}</p>
           `;
-          membersGrid.appendChild(item);
+          targetGrid.appendChild(item);
         });
       } catch (error) {
-        console.error("Unable to load team members", error);
+        console.error(`Unable to load ${path}`, error);
       }
     };
 
-    renderTeamMembers();
+    renderPeopleCsv("/team-members.txt", membersGrid);
+    renderPeopleCsv("/alumni-members.txt", alumniGrid);
 
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
