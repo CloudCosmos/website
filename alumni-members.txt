@@ -1,2 +1,3 @@
 name,linked-in,title,image
 Mehak Rana,https://www.linkedin.com/in/mehak-rana-363414369/,Software Intern,
+Raryson Rost,https://www.linkedin.com/in/raryson-pereira-rost-b33438a0/,Software Engineer,raryson-profile.png
