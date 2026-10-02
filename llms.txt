@@ -7,6 +7,9 @@ CloudCosmos is a U.S.-based technology and software company working with mid-mar
 - Contact: mailto:info@cloudcosmos.tech
 - Operating footprint: Raleigh, North Carolina; Bengaluru, India; Mohali/Chandigarh, India
 
+## Super Intelligence
+CloudCosmos helps teams build practical foundations for Super Intelligence (SI): connected knowledge, agentic workflows, secure integrations, and continuous evaluation. The focus is enterprise adoption that expands what people can achieve across complex software and business operations.
+
 ## Services
 - AI and information retrieval
 - Legacy modernization
