@@ -7,6 +7,9 @@ CloudCosmos is a U.S.-based technology and software company working with mid-mar
 - Contact: mailto:info@cloudcosmos.tech
 - Operating footprint: Raleigh, North Carolina; Bengaluru, India; Mohali/Chandigarh, India
 
+## Partnerships
+CloudCosmos is a Certified Services Partner in the Claude Partner Network. We help teams build with Claude across AI applications, agentic workflows, and enterprise software integration.
+
 ## Super Intelligence
 CloudCosmos helps teams build practical foundations for Super Intelligence (SI): connected knowledge, agentic workflows, secure integrations, and continuous evaluation. The focus is enterprise adoption that expands what people can achieve across complex software and business operations.
 

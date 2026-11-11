@@ -6,7 +6,7 @@
   <title>CloudCosmos | SI / AI, Retrieval, Modernization, Platform Engineering</title>
   <meta
     name="description"
-    content="CloudCosmos is a U.S.-based technology and software company working with mid-market businesses, startups, and product teams nationwide, with particular depth on the East Coast and in the Midwest."
+    content="CloudCosmos is a U.S.-based technology and software company and Certified Services Partner in the Claude Partner Network, delivering AI, modernization, and platform engineering."
   />
   <meta
     name="keywords"
@@ -24,7 +24,7 @@
   <meta property="og:title" content="CloudCosmos" />
   <meta
     property="og:description"
-    content="Technology and software delivery across SI / AI, retrieval, modernization, platform engineering, and startup execution."
+    content="CloudCosmos is a Certified Services Partner in the Claude Partner Network, delivering AI, retrieval, modernization, and platform engineering."
   />
   <meta property="og:url" content="https://cloudcosmos.tech/" />
   <meta property="og:locale" content="en_US" />
@@ -35,7 +35,7 @@
   <meta name="twitter:title" content="CloudCosmos" />
   <meta
     name="twitter:description"
-    content="Technology and software delivery for SI / AI systems, retrieval, modernization, platform engineering, and startup execution."
+    content="CloudCosmos is a Certified Services Partner in the Claude Partner Network, delivering AI, retrieval, modernization, and platform engineering."
   />
   <meta name="twitter:image" content="https://cloudcosmos.tech/assets/images/og-image.png" />
   <link rel="canonical" href="https://cloudcosmos.tech/" />
@@ -47,7 +47,7 @@
       "@type": "ProfessionalService",
       "name": "CloudCosmos",
       "url": "https://cloudcosmos.tech/",
-      "description": "CloudCosmos is a U.S.-based technology and software company working with mid-market businesses, startups, and product teams nationwide, with particular depth on the East Coast and in the Midwest.",
+      "description": "CloudCosmos is a U.S.-based technology and software company and Certified Services Partner in the Claude Partner Network, working with mid-market businesses, startups, and product teams nationwide.",
       "email": "info@cloudcosmos.tech",
       "areaServed": [
         "US",
@@ -292,6 +292,39 @@
 
     .section-alt {
       background: var(--bg);
+    }
+
+    .partner-section {
+      display: grid;
+      grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+      align-items: center;
+      gap: 40px;
+    }
+
+    .partner-badge {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+    }
+
+    .partner-copy h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+    }
+
+    .partner-copy p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    @media (max-width: 640px) {
+      .partner-section {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
     }
 
     .section-header {
@@ -790,6 +823,19 @@
               <span>Startup builds, technical leadership, and engineering execution.</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section partner-section" aria-labelledby="claude-partner-title">
+        <img class="partner-badge" src="/assets/images/claude-certified-services-partner.svg"
+          alt="Claude Partner Network: Certified Services Partner" width="600" height="190" />
+        <div class="partner-copy">
+          <h2 id="claude-partner-title">Certified in the Claude Partner Network</h2>
+          <p>
+            CloudCosmos is a Certified Services Partner in the Claude Partner Network.
+            We help teams build with Claude across AI applications, agentic workflows,
+            and enterprise software integration.
+          </p>
         </div>
       </section>
 
