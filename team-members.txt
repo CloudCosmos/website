@@ -7,11 +7,10 @@ Veller Bauer,https://www.linkedin.com/in/vellerbauer/,Engineering Manager,veller
 Supreeth Shridhar,,Sr AI Engineer,
 Vasanth Kumar,https://www.linkedin.com/in/vasanthkumarn/,Sr Software Engineer,vasanth-profile.png
 Ranjini Iyer,https://www.linkedin.com/in/ranjini-iyer-4b4540237/,AI Engineer,
-Chitra R,https://www.linkedin.com/in/chitra-r-bbb3ab169/,Software Engineer,chitra-profile.png
-Sharadhi Adiga,https://www.linkedin.com/in/sharadhi-adiga/,Software Engineer,sharadhi-profile.png
+Sharadhi Adiga,https://www.linkedin.com/in/sharadhi-adiga/,AI Engineer,sharadhi-profile.png
 Akash Manikantan,,AI Engineer,
 Adriano Groff,https://www.linkedin.com/in/adrianokg/,Sr Software Engineer,adriano-profile.png
-Ankita,https://www.linkedin.com/in/ankitaintech/,Software Engineer,
-Harvir Singh,https://www.linkedin.com/in/harvir-singh-7579a021a/,Software Engineer,
-Harshita Khandoli,https://www.linkedin.com/in/harshitakhandoli/,Software Intern,
+Ankita,https://www.linkedin.com/in/ankitaintech/,AI Engineer,
+Harvir Singh,https://www.linkedin.com/in/harvir-singh-7579a021a/,AI Engineer,
+Harshita Khandoli,https://www.linkedin.com/in/harshitakhandoli/,AI Engineer,
 Felipe Freitas,https://www.linkedin.com/in/felipesafreitas/,Sr. Software Engineer,felipe-profile.png

@@ -301,6 +301,19 @@
       margin: 0 auto 28px;
     }
 
+    .partner-logo {
+      display: inline-block;
+      padding: 12px;
+      margin-bottom: 16px;
+      border-radius: 12px;
+      background: #141413;
+    }
+
+    .partner-logo img {
+      width: 120px;
+      height: auto;
+    }
+
     .section-header {
       display: grid;
       grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -808,6 +821,9 @@
         <div class="section-header">
           <h2 id="partners-title">Partners</h2>
           <article class="card">
+            <a class="partner-logo" href="https://cestatech.com/" target="_blank" rel="noopener" aria-label="Cesta Inc. website">
+              <img src="/assets/images/cesta-logo.png" alt="Cesta Inc." width="3937" height="3543" loading="lazy" />
+            </a>
             <h3><a href="https://cestatech.com/" target="_blank" rel="noopener">Cesta Inc.</a></h3>
             <p>
               In partnership with Cesta Inc., a technology company working across
@@ -944,7 +960,7 @@
 
     const renderPeopleCsv = async (path, targetGrid) => {
       try {
-        const response = await fetch(path);
+        const response = await fetch(path, { cache: "no-cache" });
         if (!response.ok) {
           return;
         }
@@ -999,8 +1015,8 @@
       }
     };
 
-    renderPeopleCsv("/team-members.txt", membersGrid);
-    renderPeopleCsv("/alumni-members.txt", alumniGrid);
+    renderPeopleCsv("/team-members.txt?v=20261111-2", membersGrid);
+    renderPeopleCsv("/alumni-members.txt?v=20261111-2", alumniGrid);
 
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
