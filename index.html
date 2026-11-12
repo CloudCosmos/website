@@ -294,37 +294,11 @@
       background: var(--bg);
     }
 
-    .partner-section {
-      display: grid;
-      grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
-      align-items: center;
-      gap: 40px;
-    }
-
     .partner-badge {
       width: 100%;
-      max-width: 360px;
+      max-width: 300px;
       height: auto;
-    }
-
-    .partner-copy h2 {
-      margin: 0 0 12px;
-      font-size: clamp(1.4rem, 3vw, 1.8rem);
-      letter-spacing: -0.03em;
-      line-height: 1.2;
-    }
-
-    .partner-copy p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.75;
-    }
-
-    @media (max-width: 640px) {
-      .partner-section {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
+      margin: 0 auto 28px;
     }
 
     .section-header {
@@ -448,34 +422,6 @@
       color: var(--muted);
       font-size: 0.84rem;
       white-space: nowrap;
-    }
-
-    .logo-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .logo-card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 120px;
-      padding: 24px;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-    }
-
-    .logo-card img {
-      max-height: 42px;
-      width: auto;
-      object-fit: contain;
-      filter: grayscale(0.05);
-    }
-
-    .references .logo-card {
-      background: linear-gradient(180deg, #ffffff 0%, var(--panel) 100%);
     }
 
     .team {
@@ -634,7 +580,6 @@
       .section-header,
       .cards-2,
       .services-grid,
-      .logo-grid,
       .team.team-compact,
       .team,
       .contact-grid {
@@ -718,12 +663,6 @@
       }
     ];
 
-    const clientLogos = [
-      { name: "InsightSoftware", src: "/assets/images/insightsoftware-logo-color_new.svg", url: "https://www.insightsoftware.com" },
-      { name: "Travelopia", src: "/assets/images/travelopia-logo.svg", url: "https://www.travelopia.com" },
-      { name: "FastIron", src: "/assets/images/fastiron-logo.png", url: "https://fastiron.com/" }
-    ];
-
     const founders = [
       {
         name: "Manoj Bharadwaj",
@@ -773,7 +712,7 @@
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="#services">Services</a>
-        <a href="#clients">References</a>
+        <a href="#partners">Partners</a>
         <a href="#team">Leadership</a>
         <a href="#team-members">Team</a>
         <a href="#contact">Contact</a>
@@ -783,6 +722,8 @@
     <main>
       <section class="hero">
         <div class="hero-inner">
+          <img class="partner-badge" src="/assets/images/claude-certified-services-partner.svg"
+            alt="CloudCosmos: Certified Services Partner in the Claude Partner Network" width="600" height="190" />
           <p class="kicker">SI / AI engineering services</p>
           <h1>Engineering depth for companies building with SI / AI.</h1>
           <p class="lead" style="margin-top: 20px;">
@@ -791,9 +732,8 @@
             the Midwest. We have also delivered work for clients in India and the Middle East.
           </p>
           <p class="lead" style="margin-top: 16px;">
-            Our experience includes work for a leading global consulting firm and for organizations in tax,
-            legal information, and compliance software, alongside broader modernization, platform, and product
-            delivery work.
+            As a Certified Services Partner in the Claude Partner Network, we help teams build with Claude
+            across AI applications, agentic workflows, and enterprise software integration.
           </p>
           <p class="lead" style="margin-top: 16px;">
             CloudCosmos engineers are AI-native in how they work: comfortable across modern AI coding tools,
@@ -823,19 +763,6 @@
               <span>Startup builds, technical leadership, and engineering execution.</span>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section partner-section" aria-labelledby="claude-partner-title">
-        <img class="partner-badge" src="/assets/images/claude-certified-services-partner.svg"
-          alt="Claude Partner Network: Certified Services Partner" width="600" height="190" />
-        <div class="partner-copy">
-          <h2 id="claude-partner-title">Certified in the Claude Partner Network</h2>
-          <p>
-            CloudCosmos is a Certified Services Partner in the Claude Partner Network.
-            We help teams build with Claude across AI applications, agentic workflows,
-            and enterprise software integration.
-          </p>
         </div>
       </section>
 
@@ -877,14 +804,19 @@
         </div>
       </section>
 
-      <section class="section references" id="clients" aria-labelledby="clients-title">
+      <section class="section" id="partners" aria-labelledby="partners-title">
         <div class="section-header">
-          <h2 id="clients-title">Selected References</h2>
-          <p>
-            Representative references shown here are selective; some client engagements are not disclosed publicly.
-          </p>
+          <h2 id="partners-title">Partners</h2>
+          <article class="card">
+            <h3><a href="https://cestatech.com/" target="_blank" rel="noopener">Cesta Inc.</a></h3>
+            <p>
+              In partnership with Cesta Inc., a technology company working across
+              AI, software development, and cybersecurity.
+            </p>
+            <a class="button button-secondary" style="margin-top: 16px;" href="https://cestatech.com/"
+              target="_blank" rel="noopener">Explore Cesta</a>
+          </article>
         </div>
-        <div class="logo-grid" id="client-grid"></div>
       </section>
 
       <section class="section" id="team" aria-labelledby="team-title">
@@ -959,7 +891,6 @@
 
   <script>
     const serviceGrid = document.getElementById("service-grid");
-    const clientGrid = document.getElementById("client-grid");
     const foundersGrid = document.getElementById("founders-grid");
     const leadershipGrid = document.getElementById("leadership-grid");
     const membersGrid = document.getElementById("members-grid");
@@ -975,16 +906,6 @@
         <div class="pill-row">${pills}</div>
       `;
       serviceGrid.appendChild(item);
-    });
-
-    clientLogos.forEach((client) => {
-      const item = document.createElement("a");
-      item.className = "logo-card";
-      item.href = client.url;
-      item.target = "_blank";
-      item.rel = "noopener";
-      item.innerHTML = `<img src="${client.src}" alt="${client.name}" />`;
-      clientGrid.appendChild(item);
     });
 
     founders.forEach((person) => {

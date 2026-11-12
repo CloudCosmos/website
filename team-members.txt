@@ -4,7 +4,6 @@ Jaskaran Singh,https://www.linkedin.com/in/jaskaran-singh-586b8b14a/,Sr AI Engin
 Jashneet Kaur,https://www.linkedin.com/in/jashneet-kaur/,AI Engineer,jashneet-profile.png
 Murilo Bauer,https://www.linkedin.com/in/murilobauer/,Sr Software Engineer,murilo-profile.png
 Veller Bauer,https://www.linkedin.com/in/vellerbauer/,Engineering Manager,veller-profile.png
-Ankit Gupta,https://www.linkedin.com/in/ankit-gupta1106/,AI Engineer,ankit-profile.png
 Supreeth Shridhar,,Sr AI Engineer,
 Vasanth Kumar,https://www.linkedin.com/in/vasanthkumarn/,Sr Software Engineer,vasanth-profile.png
 Ranjini Iyer,https://www.linkedin.com/in/ranjini-iyer-4b4540237/,AI Engineer,
@@ -16,4 +15,3 @@ Ankita,https://www.linkedin.com/in/ankitaintech/,Software Engineer,
 Harvir Singh,https://www.linkedin.com/in/harvir-singh-7579a021a/,Software Engineer,
 Harshita Khandoli,https://www.linkedin.com/in/harshitakhandoli/,Software Intern,
 Felipe Freitas,https://www.linkedin.com/in/felipesafreitas/,Sr. Software Engineer,felipe-profile.png
-Jessica Diniz,https://www.linkedin.com/in/jessicafdiniz/,Sr. UX Designer,jessica-profile.png

@@ -10,6 +10,8 @@ CloudCosmos is a U.S.-based technology and software company working with mid-mar
 ## Partnerships
 CloudCosmos is a Certified Services Partner in the Claude Partner Network. We help teams build with Claude across AI applications, agentic workflows, and enterprise software integration.
 
+- [Cesta Inc.](https://cestatech.com/): CloudCosmos partner working across AI, software development, and cybersecurity.
+
 ## Super Intelligence
 CloudCosmos helps teams build practical foundations for Super Intelligence (SI): connected knowledge, agentic workflows, secure integrations, and continuous evaluation. The focus is enterprise adoption that expands what people can achieve across complex software and business operations.
 
@@ -19,10 +21,6 @@ CloudCosmos helps teams build practical foundations for Super Intelligence (SI):
 - Digital transformation
 - Platform engineering
 - Startup build partnerships
-
-## Experience
-- Work delivered for a leading global consulting firm
-- Work across tax, legal information, and compliance software domains
 
 ## Capabilities
 - LLM applications and retrieval-augmented systems
